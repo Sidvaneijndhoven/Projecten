@@ -29,6 +29,10 @@ footer
     background-color: #5F9D9F;
     height: 50px;
 }
+footer p
+{
+    text-align: center;
+}
 h1
 {
     background-color: aliceblue;
