@@ -1,23 +1,33 @@
 html,
-body {
+body
+{
     margin: 0;
     padding: 0;
 }
-.contentContainer {
+.contentContainer
+{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
-.contentContainer nav {
+.contentContainer nav
+{
     order:0;
     flex-grow: 1;
     background-color: #F4F4DB;
     padding: 15px;
 }
-.contentContainer #wrapper {
+.contentContainer #wrapper
+{
     order: 1;
     flex-grow: 3;
     padding: 15px;
+}
+footer
+{
+    width: 100%;
+    background-color: #5F9D9F;
+    height: 50px;
 }
 h1
 {
