@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4336b93d-f7d9-4a5b-adf9-9b0ea2630f01" name="Default Changelist" comment="Kleine updates style.css" />
+    <list default="true" id="4acdd143-ee5e-4684-98a2-a01bde721258" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Realiseren/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Praktijk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Instructies/hoofdstuk2/Instructie1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Instructies/hoofdstuk2/Instructie1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Instructies/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Instructies/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Instructies/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Instructies/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening2_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening2_2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening_2_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening_2_1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening_2_3.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Oefeningen/hoofdstuk2/T3_REA_Oefening_2_3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Oefeningen/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Oefeningen/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T3_REA_Oefeningen/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/T3_REA_Oefeningen/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Realiseren/includes/menu.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
-  <component name="ProjectId" id="1osqxBRwfkuoeaNoErbOH9zdWAu" />
+  <component name="ProjectId" id="24Vh9K4jqWCuMepXgoEhP6skzMp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,60 +38,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/T3_REA_Oefeningen/hoofdstuk2" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Praktijk" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\inetpub\wwwroot\T3_REA_Oefeningen\hoofdstuk2" />
+      <recent name="C:\inetpub\wwwroot\Praktijk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\inetpub\wwwroot" />
-      <recent name="C:\inetpub\wwwroot\T3_REA_Oefeningen" />
+      <recent name="C:\inetpub\wwwroot\Realiseren" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4336b93d-f7d9-4a5b-adf9-9b0ea2630f01" name="Default Changelist" comment="" />
-      <created>1614085890108</created>
+      <changelist id="4acdd143-ee5e-4684-98a2-a01bde721258" name="Default Changelist" comment="" />
+      <created>1643721509595</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614085890108</updated>
-      <workItem from="1614085891233" duration="5156000" />
-      <workItem from="1614683799407" duration="6175000" />
-      <workItem from="1615287425308" duration="9523000" />
+      <updated>1643721509595</updated>
+      <workItem from="1643721513406" duration="389000" />
     </task>
-    <task id="LOCAL-00001" summary="Klaarzetten index.php">
-      <created>1615295005993</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1615295005993</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Klaarzetten index.php">
-      <created>1615295056235</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1615295056235</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Klaarzetten index.php">
-      <created>1615295661537</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1615295661537</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Kleine updates style.css">
-      <created>1615321631457</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1615321631457</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,11 +75,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Klaarzetten index.php" />
-    <MESSAGE value="Kleine updates style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kleine updates style.css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
