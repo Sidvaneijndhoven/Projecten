@@ -1,0 +1,42 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+}
+
+header
+{
+	background-color: aliceblue;
+	text-align: center;
+	height: 15%;
+	padding-top: 15px;
+	position: relative;
+}
+main
+{
+	height: 80%;
+	box-sizing: border-box;
+}
+
+main nav
+{
+	background-color: aquamarine;
+	width: 25%;
+	float: left;
+	height: 85%;
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+main section
+{
+	background-color: beige;
+	height: 85%;
+	float: right;
+	width: 75%;
+	box-sizing: border-box;
+	padding: 25px;
+}
