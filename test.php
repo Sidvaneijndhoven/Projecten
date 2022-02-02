@@ -22,6 +22,8 @@
                 margin: 0;
                 padding: 0;
                 height: 100vh;
+                width: 100vw;
+                position: absolute;
             }
 
             header
@@ -29,18 +31,16 @@
                 background-color: aliceblue;
                 text-align: center;
                 height: 15%;
-                margin-top: 5px;
+                padding-top: 15px;
+                position: relative;
             }
 
             main
             {
                 background-color: beige;
                 height: 10%;
-                margin-top: 5px;
-            }
-            main p
-            {
-
+                padding: 15px;
+                position: relative;
             }
         </style>
     </head>
@@ -57,7 +57,7 @@
         ?>
     <main id="wrapper">
         <?php
-            echo "<p>Het is nu $time op datum $date. Succes en plezier met de komende lessen!</p>";
+            echo "<p>Het is nu $time op datum $date. <br> Succes en veel plezier met de komende lessen!</p>";
         ?>
     </main>
     </body>
