@@ -9,7 +9,7 @@ body {
 
 header
 {
-	background-color: aliceblue;
+	background-color: blue;
 	text-align: center;
 	height: 15%;
 	padding-top: 15px;
@@ -23,17 +23,17 @@ main
 
 main nav
 {
-	background-color: aquamarine;
+	background-color: green;
 	width: 25%;
 	float: left;
 	height: 85%;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	padding: 25px;
 }
 
 main section
 {
-	background-color: beige;
+	background-color: red;
 	height: 85%;
 	float: right;
 	width: 75%;

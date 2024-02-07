@@ -1,8 +1,8 @@
 <?php
 /**
- * User: S. Tudent
- * Date: Date
- * File: T3_REA_Oefening1.1.php
+ * User: sid van eijndhoven
+ * Date: 5-2-2024
+ * File: T3_REA_Oefening 2.1.php
  */
 ?>
 <!DOCTYPE html>
@@ -41,7 +41,19 @@
                 <h2>
                     Uitwerkingen.
                 </h2>
-
+                <?php
+                echo "<p> Php is een opensource scriptaal die een website dinamisch maakt door informatie om te zetten
+                van een database oftewel een server side script taal</p>"
+                ?>
+                <?php
+                   echo "<h1> Git en Github</h1>"
+                ?>
+                <?php
+                echo "<p> Doormiddel van een git kan je een opdracht clonen uit github en die gebruiken om de opdracht te maken.
+                        Met een commit kan je wijzingen maken aan je lokale GIT repository. Met een push kan je wijzingen sturen naar de Github repository
+                      </p>"
+                ?>
+                <!-- met echo kan je waardes naar de html sturen en kan je dus de text op de pagina zien. -->
                 <!-- Plaats je code / uitwerking hieronder -->
                 <p>
                     <?php
