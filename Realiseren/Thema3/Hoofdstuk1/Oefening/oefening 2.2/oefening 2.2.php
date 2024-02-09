@@ -41,6 +41,7 @@
                         Meer dan de helft van de 2,3 miljoen inwoners van Gaza verblijft op dit moment in Rafah, dat dicht bij de grens met Egypte ligt. Voor velen is het de laatste veilige plek in de Gazastrook. De nieuwe aanvallen op Rafah zorgen dan ook voor veel paniek onder de gevluchte Palestijnen die daar verblijven.
                 </p>"
         ?>
+
         <?php
             echo "<img src='../oefening%202.2/images/OIP.jpg'>"
         ?>
