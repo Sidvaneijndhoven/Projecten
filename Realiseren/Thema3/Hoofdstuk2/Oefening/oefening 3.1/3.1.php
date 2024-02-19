@@ -5,7 +5,6 @@
  * File: T3_REA_Oefening3.1php
  */
 ?>
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
