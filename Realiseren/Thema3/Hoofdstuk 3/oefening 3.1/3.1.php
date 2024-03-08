@@ -16,14 +16,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/3.1.css" rel="stylesheet">
-</head>A
+</head>
 <body>
 <header>
-    <h1>
-        <?php
-        echo 'Oefeningen ';
-        ?>
-    </h1>
+    include "hea"
 </header>
 <?php
 //Hier gaan we in het volgende hoofdstuk het menu toevoegen.
