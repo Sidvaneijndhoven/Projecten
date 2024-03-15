@@ -1,0 +1,22 @@
+/*opmaak zodat het er ietsje beter uit ziet*/
+form
+{
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+}
+
+h3
+{
+    display: inline;
+    text-align: center;
+
+}
+
+h1
+{
+    text-align: center;
+}
