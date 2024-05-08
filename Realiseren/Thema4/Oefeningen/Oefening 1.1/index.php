@@ -53,14 +53,15 @@ catch (PDOException $e)
     // Bij een error, toon dan deze melding
     echo "Er is een probleem met ophalen van tblRiddles: " . $e->getMessage();
 
-    // Stop het script
+    // Stop het scrip
     die();
 }
 
 // Door de results heen loopen via een while
+echo "<table border='1'>";
 while ($row = $result->fetch(PDO::FETCH_ASSOC))
 {
-    echo "<table border='1'>";
+
     echo "<tr>";
     echo "<th>ID: " . $row["Id"] . "</th>";
     echo "<th>Raadsel: " . $row["RiddleText"] . "</th>";
@@ -68,7 +69,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC))
     echo "<th>Bedenker:" . $row["Creator"] . "</th>";
     echo "<th>Datum: " . $row["CreateDate"] . "</th>";
     echo "</tr>";
-    echo "</table>";
-}
 
+}
+echo "</table>";
 ?>
