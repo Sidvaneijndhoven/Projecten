@@ -1,0 +1,285 @@
+/*User: Sid van Eijndhoven, Harris van Weert, Justin van Ravenstein*/
+/*Date: 19-3-2024*/
+/*File: Stylesheet.css*/
+
+body
+{
+    font-family: Calibri;
+    margin: 0;
+}
+
+#titel1
+{
+    text-align: center;
+
+}
+
+#dv1
+{
+    background-color: #085e92;
+    width: 900px;
+    height: 100%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px yellow;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boven1
+{
+    text-align: center;
+}
+
+#koptekst
+{
+    text-align: center;
+    font-size: 28px;
+}
+
+/* zorgt ervoor dat text in midden komt te staan. */
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+/* li geeft fonts. lettertype en breedte*/
+li
+{
+    font-family: -apple-system;
+    display: inline;
+    width: 100%;
+    font-size: 24px;
+    padding: 14px 16px;
+}
+
+/* zorgt ervoor dat van navagatie verandert als je er over heen gaat*/
+nav a:hover
+{
+    border-bottom: 1px solid #053C5E;
+    color: #c48410;
+}
+
+/* geeft kleur */
+a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: 540;
+    transition: .3s;
+}
+
+/* geeft border line aan de navagitie*/
+nav
+{
+    border-bottom: 1px solid #053C5E;
+}
+
+/*geeft positie. een margin en breedte aan de logo*/
+#logo
+{
+    position: relative;
+    width: 100px;
+    height: 14%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+/* geeft hoogte en witdh aan hamburger menu*/
+.hamburger, #menu
+{
+    display: inline;
+    height: auto;
+    width: 100%;
+}
+
+img
+{
+
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#tijd
+{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#suvtje
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+footer
+{
+    width: 100%;
+    height: 30px;
+    background-color: #053C5E;
+    margin: 0;
+}
+
+h2
+{
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Calibri;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+/* Deze regel bepaalt de overgangseigenschappen voor alle 'span'-elementen binnen 'h2' met een overgangsduur van 0.5 seconden en een lineaire overgang. */
+h2 span
+{
+    transition: .5s linear
+}
+/* Deze regel voegt een rechtermarge van 5px toe aan het eerste 'span'-element binnen 'h2' wanneer 'h2' wordt overschreden. */
+h2:hover span:nth-child(1){
+    margin-right: 5px
+}
+/* Deze regel voegt inhoud toe aan het element :after van het eerste 'span'-element binnen 'h2' wanneer 'h2' wordt overschreden. */
+h2:hover span:nth-child(1):after{
+    content: "";
+}
+/* Deze regel voegt een linkermarge van 10px toe aan het tweede 'span'-element binnen 'h2' wanneer 'h2' wordt overschreden. */
+h2:hover span:nth-child(2){
+    margin-left: 10px
+}
+/* Deze regel verandert de kleur en past een text-shadow-effect toe op alle 'span'-elementen binnen 'h2' wanneer 'h2' wordt overschreden. */
+h2:hover span{
+    color: #c48410;
+    text-shadow: 0 0 10px #c48410,
+    0 0 20px #c48410,
+    0 0 40px #c48410;
+}
+
+#voeter
+{
+    text-align: center;
+    background-color: #053C5E;
+    margin: 0;
+    font-family: -apple-system;
+    font-size: 18px;
+}
+
+#vehicle3
+{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 599px) {
+    /* geeft overflow en positie*/
+    .hamburger {
+        overflow: hidden;
+        position: relative;
+        background-color: #F2F2F2;
+        width: 100vw;
+    }
+
+    /* geeft display none*/
+    .hamburger #menu {
+        display: none;
+
+    }
+
+    /* geeft padding, fonts, kleur aan linkjes in de hamburger menu*/
+    .hamburger a {
+        background-color: #F2F2F2;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin-right: 15%;
+        font-family: Calibri;
+        border-radius: 20px;
+    }
+
+    /*geeft een positei en achtergronds foto*/
+    .hamburger a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url("../Images/hamburger.jpg");
+        background-position: center;
+        background-size: 50px;
+    }
+
+    /* zorgt er voor achtergrond kleur veranders als je erover heen gaat.*/
+    .hamburger a:hover {
+        background-color: #ecd92d;
+        color: black
+    }
+
+    /* geeft fonts en achtergronds kleur*/
+    #active {
+        background-color: #f2f2f2;
+        color: #000000;
+        font-family: Calibri;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    #tijd
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #dv1
+    {
+        width: 100%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    img
+    {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1
+    {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+
+    footer
+    {
+        margin-top: 20px;
+    }
+}
