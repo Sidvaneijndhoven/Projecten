@@ -1,1 +1,1 @@
-Klik op branches om mijn projecten te zien
+QR code generator gemaakt met behulp van een api en javascript. 
