@@ -1,0 +1,295 @@
+/*User: Sid van Eijndhoven*/
+/*Date: 17-5-2024*/
+/*File: Stylesheet.css*/
+
+/*font */
+.open-sans-uniquifier {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+
+body
+{
+    margin: 0;
+    font-weight: 500;
+}
+
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid deepskyblue;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+li
+{
+    display: inline;
+    width: 50%;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+/*als je met je muis erover gaat komt er een lijntje onder*/
+nav a:hover
+{
+   background-color: #085e92;
+    border-radius: 5px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
+}
+
+nav a
+{
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 350;
+    margin-bottom: 25px;
+}
+
+nav
+{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+#logo
+{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+#top
+{
+    width: 100%;
+    height: 50px;
+    position: relative;
+
+}
+
+#donate
+{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F07604;
+    color: white;
+    float: right;
+    border: none;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+#nood
+{
+    width: 100%;
+    height: 60%;
+    background-color: #FFEEEE;
+    text-align: center;
+    margin: 0;
+    color: red;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+#nummer
+{
+    color: cadetblue;
+}
+
+#midden
+{
+    width: 800px;
+    height: 300px;
+    position: relative;
+    left: 20%;
+    border: none;
+    border-radius: 10px;
+    margin: auto ;
+}
+
+button
+{
+    width: 120px;
+    height: 70px;
+    background-color: #008EA5;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+
+}
+
+button a
+{
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+}
+
+
+
+#kat, #hond, #dier, #doneren, #afstaan, #vrijwilliger
+{
+    width: 50px;
+    height: 40px;
+
+}
+
+#knoppen
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 22%;
+}
+
+button a:hover
+{
+    color: red;
+}
+
+#positie
+{
+    width: 100%;
+    background-color: #D2EBEF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+footer
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    background-color: #008EA5;
+}
+
+p
+{
+    margin: 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 450;
+}
+
+
+/*border collapse is voor dat alle lijnen mooi over elkaar staan en niet allemaal los*/
+table,tr ,td
+{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 250;
+    border: 2px solid black;
+}
+
+h3
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+    text-align: center;
+}
+
+#logout
+{
+    margin-left: 20px;
+}
+
+/*box-shadow is voor de schaduw om de border*/
+form
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 450;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px deepskyblue;
+}
+
+#send
+{
+    width: 100px;
+    height: 50px;
+    background-color: #0099cc;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+}
+
+#send:hover
+{
+    color: red;
+}
+
+#weg
+{
+    color: black;
+    display: inline-block;
+}
+
+#logo2
+{
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#extra
+{
+    margin-bottom: 220px;
+}
+
+/*font weight is voor de dikte van het lettertype*/
+#welkom
+{
+    margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+}
+
+#personeel
+{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 450;
+}
+
+#fotos
+{
+    width: 110px;
+    height: 100px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px #0099cc;
+}
+
