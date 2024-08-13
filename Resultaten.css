@@ -1,0 +1,133 @@
+/*User: sid van eijndhoven*/
+/* Date: 20-2-2024-->*/
+/* File: Resultaten.css */
+
+html,
+body
+{
+    display: block;
+    margin: 0;
+}
+/*font face die je gemakkelijk kan oproepen overal*/
+@font-face
+{
+    font-family: montserrat;
+    src: url("../Font/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face
+{
+    font-family: lato, sans-serif;
+    src: url("../Font/Lato-Regular.ttf");
+}
+
+main
+{
+    font-family: sans-serif;
+}
+#logo {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 73px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+#onder
+{
+    border-bottom: 1px solid #000000;
+}
+
+li
+{
+    display: inline;
+    width: 50%;
+    font-size: 12px;
+    padding: 14px 16px;
+}
+
+a:hover
+{
+    border-bottom: 2px solid #000000;
+}
+
+a
+{
+    font-family: lato, sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 540;
+}
+
+h1,p
+{
+    text-align: center;
+    margin: 0;
+    font-family: lato, sans-serif;
+}
+
+#flossen
+{
+    float: left;
+    padding-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#afspraakmaken
+{
+    float: right;
+    padding-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*maten*/
+#duim
+{
+   position: relative;
+    width: auto;
+    height: auto;
+    left: 38%;
+}
+
+@media screen and (max-width: 599px)
+{
+    #duim
+    {
+        position: relative;
+        width: auto;
+        height: auto;
+        left: 5%;
+    }
+
+    #flossen
+    {
+        height: 150px;
+        width: auto;
+        padding-left: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+    }
+
+    #afspraakmaken
+    {
+        height: 150px;
+        width: auto;
+        padding-right: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
