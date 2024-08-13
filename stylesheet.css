@@ -1,0 +1,155 @@
+/* Owner: SidvanEijndhoven
+Date: 13-august-2024
+File: index.html */
+
+body
+{
+    background-color: #222;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.card
+{
+    text-align: center;
+    background-color: rgb(87, 128, 128);
+    width: 30%;
+    height: 1300px;
+    margin: 0px auto 100px auto;
+    border-radius: 25px;
+    padding-top: 25px;
+}
+
+
+
+.search
+{
+    background-color: rgb(27, 85, 85);
+    border-radius: 25px;
+    border-radius: 20px;
+    width: 40%;
+    height: auto;
+    margin: auto auto 0px auto;
+    padding: 15px 0px 15px 0px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.search input
+{
+    width: 75%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(35, 112, 112);
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 50px auto 50px auto;
+    flex: 1;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 100;
+    box-shadow: 2px 2px rgb(36, 103, 109);
+    border: 1px solid rgb(26, 95, 95);
+    animation:Border 1s ease-out 5;
+}
+
+.search button
+{
+    border: 0;
+    outline: 0;
+    background-color: rgb(35, 112, 112);
+    padding-top: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgb(36, 103, 109);
+}
+
+.search button img
+{
+    width: 30px;
+}
+
+.search h1 
+{
+    margin: 5px auto 0px auto;
+    height: auto;
+    width: auto;
+}
+
+.details
+{
+    font-weight: 800;
+}
+
+.weather .temp 
+{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.weather
+{
+    font-size: 20px;
+    display: none;
+    animation: fadeInAnimation ease 1s;
+}
+
+.error
+{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.web
+{
+    height: 2000px;
+    width: auto;
+    margin: 500px auto 500px auto;
+}
+
+.search .sun
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+    animation: fadeInAnimation ease 4s;
+    border-radius: 50%;
+    border-width: 100px;
+    animation: sunBorder 3s ease-in-out;
+}
+
+/* animation */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Border
+{
+    from{
+        border: 1px solid rgb(50, 151, 160);
+    }
+
+    to{
+        border: 1px solid yellow;
+    }
+}
+
+@keyframes sunBorder {
+    from{
+        border-bottom: 1px solid yellow;
+    }
+
+    to{
+        border: 1px solid yellow;
+    }
+}
