@@ -1,0 +1,129 @@
+/* Owner: SidvanEijndhoven
+Date: 14-august-2024
+file: index.html */
+body
+{
+    background-color: #262a2f;
+    font-family: cursive;
+}
+
+.container
+{
+
+    width: 600px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input#qrText 
+{
+    font-family: cursive;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 1px 1px #5b5e61;
+    font-size: 16px;
+    animation: Border 1s ease-out 6;
+}
+
+input#qrText:hover
+{
+    background-color: #5b5e61;
+    color: black;
+}
+
+button
+{
+    border: 1px solid black;
+    font-family: cursive;
+    border-radius: 20px;
+    box-shadow: 1px 1px #5b5e61;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button:hover
+{
+    background-color: #5b5e61;
+}
+
+button
+{
+    height: auto;
+    width: auto;
+    margin: 15px;
+    box-shadow: 1px 1px #5b5e61;
+}
+
+#qrImage
+{
+    width: auto;
+    height: 200px;
+    left: 0px;
+    top: auto;
+    
+}
+
+#imgBox
+{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#imgBox img
+{
+    width: 100%;
+    padding: 10px;
+   
+ 
+}
+
+#imgBox.show-img
+{
+    max-height: 250px;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px 25px;
+    animation: fadeInAnimation ease 2s;
+
+}
+
+h1
+{
+    animation: Border 5s ease-out 1;
+    border-radius: 25px;
+    border-width: 200px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* animation */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Border
+{
+    from{
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    to{
+        border: 1px solid rgb(252, 61, 3);
+    }
+}
