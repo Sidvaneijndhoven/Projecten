@@ -1,0 +1,342 @@
+/*User: Sid van Eijndhoven, Harris van Weert, Justin van Ravenstein*/
+/*Date: 19-3-2024*/
+/*File: Stylesheet.css*/
+body,html
+{
+    margin: 0;
+}
+
+ul, #active
+{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+li, #active
+{
+    font-family: -apple-system;
+    display: inline;
+    width: 50%;
+    font-size: 20px;
+    padding: 14px 16px;
+}
+
+nav a:hover
+{
+    border-bottom: 1px solid #053C5E;
+    color: #c48410;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: 540;
+    transition: .3s;
+}
+
+nav
+{
+    border-bottom: 1px solid #053C5E;
+}
+
+video
+{
+    margin-top: 20px;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+#logo
+{
+    position: relative;
+    width: 100px;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+footer
+{
+    text-align: center;
+    padding: 0;
+    background-color: #053C5E;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+#rs7
+{
+    border: 3px solid black;
+    position: absolute;
+    height: 400px;
+    width: 225px;
+    top: 55%;
+    left: 21%;
+    background-color: #053C5E;
+    color: white;
+    text-align: center;
+    font-family: -apple-system;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+#golf
+{
+    border: 3px solid black;
+    position: absolute;
+    height: 400px;
+    width: 225px;
+    top: 55%;
+    left: 61%;
+    background-color: #053C5E;
+    color: white;
+    text-align: center;
+    font-family: -apple-system;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+#urus
+{
+    border: 3px solid black;
+    position: absolute;
+    height: 400px;
+    width: 225px;
+    top: 55%;
+    left: 41%;
+    background-color: #053C5E;
+    color: white;
+    text-align: center;
+    font-family: -apple-system;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+
+#audi
+{
+    height: 150px;
+    width: 100%;
+}
+
+
+#gti
+{
+    height: 150px;
+    width: 100%;
+}
+
+#mansory
+{
+    height: 150px;
+    width: 100%;
+}
+
+p
+{
+    font-family: -apple-system;
+}
+
+h1, #h1erbij
+{
+    font-size: 17px;
+    font-family: "Arial Black";
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#h1erbij
+{
+    font-size: 17px;
+    font-family: "Arial Black";
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+
+footer
+{
+    width: 100%;
+    height: 30px;
+    background-color: #053C5E;
+}
+
+h2{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2 span{
+    transition: .5s linear
+}
+h2:hover span:nth-child(1){
+    margin-right: 5px
+}
+h2:hover span:nth-child(1):after{
+    content: "";
+}
+h2:hover span:nth-child(2){
+    margin-left: 10px
+}
+h2:hover span{
+    color: #c48410;
+    text-shadow: 0 0 10px #c48410,
+    0 0 20px #c48410,
+    0 0 40px #c48410;
+}
+
+#voeter
+{
+    text-align: center;
+    background-color: #053C5E;
+    margin: 0;
+    font-family: -apple-system;
+    font-size: 18px;
+}
+
+iframe
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px #f3d413;
+}
+
+h3
+{
+    font-family: Calibri;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* geeft hoogte en witdh aan hamburger menu*/
+.hamburger, #menu
+{
+    display: inline;
+    height: auto;
+    width: 100%;
+}
+/* maximale groot van het scherm*/
+@media screen and (max-width: 500px)
+{
+
+    /* geeft achtergrond kleur aan het menu*/
+    .hamburger
+    {
+        overflow: hidden;
+        position: relative;
+        background-color: #ffffff;
+        width: 100vw;
+    }
+
+    .hamburger #menu
+    {
+        display: none;
+
+    }
+
+    /* geeft kleur, en eigenschappen. Aan het nagavitie menu */
+    .hamburger a
+    {
+        background-color: #f2f2f2;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin-right: 15%;
+        font-family: Calibri;
+        border-radius: 20px;
+    }
+
+    /* geeft kleur. aan het vierkantje*/
+    .hamburger a.icon
+    {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url("../Images/hamburger.jpg");
+        background-position: center;
+        background-size: 50px;
+    }
+
+    .hamburger a:hover
+    {
+        background-color: #ecd92d;
+        color: black
+    }
+
+    #active
+    {
+        background-color: #f2f2f2;
+        color: #000000;
+        font-family: Calibri;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    /* geeft een positie voor de urus*/
+    #urus
+    {
+        position: absolute;
+        top: 50vh;
+        width: 40vw;
+        left: 54vw;
+    }
+
+    /* Geeft een positie voor de Golf.*/
+    #golf
+    {
+        position: absolute;
+        top: 50vh;
+        width: 40vw;
+        left: 0vw;
+    }
+
+    /*Geeft positie voor rs7*/
+    #rs7
+    {
+        position: absolute;
+        top: 100vh;
+        width: 40vw;
+        left: 28vw;
+    }
+
+    /* Geeft positie aan de kaart*/
+    #maps
+    {
+        position: relative;
+        top: 110vh;
+        width: 90vw;
+    }
+
+    /* Geeft positie aan de footer*/
+    footer
+    {
+        position: relative;
+        top: 115vh;
+    }
+
+}
