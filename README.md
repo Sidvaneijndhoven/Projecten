@@ -1,1 +1,1 @@
-Klik op branches om mijn projecten te zien
+Hier een simpele puntentelling die ik in mijn vrije tijd had gemaakt
