@@ -1,1 +1,1 @@
-Klik op branches om mijn projecten te zien
+Simpele afbeelding gallerij met javascript
