@@ -1,0 +1,67 @@
+<!-- Owner: SidvanEijndhoven
+Date 14-august-2024
+File: index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <h1>
+        Simpel Image Gallery
+    </h1>
+    <p>
+        simpel image gallery met Javascript
+    </p>
+    <div class="gallery-wrap">
+        <img src="images/back.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span> <img src="images/image-1.png"></span>
+                <span> <img src="images/image-2.png"></span>
+                <span> <img src="images/image-3.png"></span>
+            </div>
+            <div>
+                <span> <img src="images/image-4.png"></span>
+                <span> <img src="images/image-5.png"></span>
+                <span> <img src="images/image-6.png"></span>
+            </div>
+        </div>
+        <img src="images/next.png" id="nextBtn">
+    </div>
+    <footer>
+        <button><a href="https://github.com/Sidvaneijndhoven">&copy; SidvanEijndhoven</a></button>
+    </footer>
+    
+    <script>
+        // zorgt ervoor dat je kan scrollen
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => 
+    {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    // zorgt ervoor dat je kan klikken en dat de transitie smooth is
+    nextBtn.addEventListener("click", () =>
+    {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", () =>
+    {   
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+    });
+    </script>
+</body>
+</html>
