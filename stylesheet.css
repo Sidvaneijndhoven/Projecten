@@ -1,0 +1,112 @@
+body
+{
+    background-color: rgb(94, 90, 90);
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.quote-box
+{
+    background-color: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px ;
+}
+
+.quote-box blockquote
+{
+    width: auto;
+    font-size: 26px;
+    font-family: cursive;
+    overflow: hidden;
+    animation: 
+    typing 3.5s steps(40, end) ;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after
+{
+    content: '"';
+}
+
+.quote-box span 
+{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before
+{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div button
+{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px rgb(59, 58, 58);
+}
+
+div button:hover
+{
+    background-color: grey;
+}
+
+#logo
+{
+    animation: fadeInAnimation ease 3s;
+}
+
+
+footer a
+{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer button
+{
+    background-color: transparent;
+    border: 0;
+}
+
+
+/* Animation */
+
+@keyframes typing 
+{
+    from { width: 0;
+    max-height: 150px;}
+    to { width: 100%;
+        max-height: 150px; }
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
