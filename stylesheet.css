@@ -1,0 +1,155 @@
+/* Owner: SidvanEijndhoven
+Date: 14-august-2024 */
+/* File: stylesheet.css */
+body
+{
+    background: linear-gradient(135deg, #0d208a, #6899e2);
+    border: 0;
+    outline: 0;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.container
+{
+    width: 40%;
+    min-height: 100vh;
+    padding: 10px;
+    color: #ffffff;
+    border: 3px solid rgb(22, 133, 224);
+    margin: 0px auto 0px auto;
+    border-radius: 35px;
+}
+
+.calculator
+{
+    width: 100%;
+    max-height: 600px;
+}
+
+.calculator h1
+{
+    font-size: 60px;
+    text-shadow: 2px 2px #10627a;
+}
+
+.calculator h1 span
+{
+    color: #ffff76;
+    text-shadow: 2px 2px #b19a1b;
+}
+
+.input-box
+{
+    height: auto;
+    
+
+}
+
+.input-box input
+{
+    height: auto;
+}
+
+.input-box button
+{
+    height: auto;
+    width: auto;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-top: 25px;
+    background-color: #6899e2;
+    box-shadow: 1px 1px #4b77b9;
+    border: 1px solid #6899e2;
+    cursor: pointer;
+    border-radius: 25px;;
+}
+button:hover
+{
+    background-color: #223a5f;
+}
+
+.input-box input::-webkit-calender-picker-indicator
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#date
+{
+    width: 25%;
+    text-align: center;
+    background-color: #6899e2;
+    border: 1px solid #6899e2;
+    box-shadow: 1px 1px #4b77b9;
+    font-size: 18px;
+    font-family: Verdana;
+    border-radius: 25px;;
+    animation: Border 1s ease-out 5;
+}
+
+#result
+{
+    font-size: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    transform: translateX(-100%);
+    animation: slide-in 3s forwards;
+}
+
+#bio
+{
+    margin-bottom: 25px;
+}
+
+footer a
+{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+footer button
+{
+    background-color: transparent;
+    border: 0;
+}
+
+#logo
+{
+    width: auto;
+    height: 250px;
+    margin-bottom: -35px;
+}
+
+/* Animation */
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes Border
+{
+    from{
+        border: 2px solid #6899e2;
+    }
+
+    to{
+        border: 2px solid rgb(252, 61, 3);
+    }
+}
