@@ -1,1 +1,1 @@
-Klik op branches om mijn projecten te zien
+Password strength checker gemaakt met javascript
