@@ -1,1 +1,2 @@
-Klik op branches om mijn projecten te zien
+Quote generator met behulp van een quote api
+Api: https://github.com/lukePeavey/quotable
