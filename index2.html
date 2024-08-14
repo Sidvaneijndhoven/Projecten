@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up style</title>
+    <link rel="stylesheet" href="styles/stylesheet2.css">
+</head>
+<body>
+    <h1>
+        Pop up design 2
+    </h1>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Bestelling afronden</button>
+        <div class="popup" id="popup">
+            <img src="../images/succes.png">
+            <h2>Betaling geslaagd!</h2>
+            <p>Bedankt voor je bestelling! We houden je op de hoogte van de status via e-mail.<br</p>
+            <p>✔✔✔</p>
+            <button type="button" onclick="closePopup()">Volg Bestelling</button>
+        </div>
+    </div>
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup()
+            {
+               popup.classList.add("open-popup");
+            }
+            function closePopup()
+            {
+               popup.classList.remove("open-popup");
+            }
+        </script>
+
+</body>
+</html>
+
