@@ -1,1 +1,2 @@
-Klik op branches om mijn projecten te zien
+Music player gemaakt met javascript.
+icons van fontawesome.com
