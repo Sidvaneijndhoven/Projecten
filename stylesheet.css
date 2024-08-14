@@ -1,0 +1,223 @@
+/* Owner: Sid van SidvanEijndhoven
+Date: 14-august-2024
+File: stylesheet.css */
+
+body
+{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(135deg, #030303, #ee3d07);
+}
+
+.container
+{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 200px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: none;
+}
+
+
+
+.music-player
+{
+    background: linear-gradient(135deg, #030303, #6899e2);
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+nav .circle
+{
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+.song-img
+{
+    width: 350px;
+    height: auto;
+    animation: fadeInAnimation ease 2s;
+}
+
+#progress
+{
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: #231fd6;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0px;
+}
+
+#progress::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 2);
+}
+
+.controls
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide-in 1.5s forwards;
+}
+
+.controls div
+{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px  #15181d;
+    cursor: pointer;
+}
+
+.controls div:hover
+{
+    background-color: #3346b6;
+}
+
+
+.controls div:nth-child(2)
+{
+    transform: scale(1.2);
+    background-color: black;
+    color: rgb(0, 26, 255);
+    animation: Border 1s ease-out 5;
+}
+
+#volume
+{
+    appearance: none;
+    width: 50%;
+    height: 6px;
+    background-color: #231fd6;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0px;
+}
+
+#volume::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    background: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+
+.louisvos
+{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    animation: fadeInAnimation ease 2s;
+}
+
+#upper
+{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 30px;
+}
+
+#songTitle
+{
+    font-size: 35px;
+}
+
+#songArtist
+{
+    font-size: 20px;
+}
+
+footer a
+{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer button
+{
+    background-color: transparent;
+    border: 0;
+}
+
+#lichtje
+{
+    animation: licht 4s ease-out 1;
+
+}
+/* Animation */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes Border
+{
+    from{
+        border: 1px solid #000000;
+    }
+
+    to{
+        border: 1px solid rgb(252, 61, 3);
+    }
+}
+
+@keyframes licht 
+{
+    from 
+    {
+        color: #000000;
+    }
+    to 
+    {
+        color: #3346b6;
+    }
+}
