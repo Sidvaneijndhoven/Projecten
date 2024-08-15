@@ -1,1 +1,1 @@
-Klik op branches om mijn projecten te zien
+Digital clock gemaakt met javascript ook nog eentje gemaakt met andere kleuren
