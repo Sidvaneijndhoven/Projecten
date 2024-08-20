@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up style</title>
+    <link rel="stylesheet" href="styles/stylesheet3.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>
+        Pop up design 3 
+    </h1>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Overzicht</button>
+        <div class="popup" id="popup">
+            <img src="../images/LTK-Klant_Protix.png">
+            <h2>Geslaagd!</h2>
+            <table>
+                    <tr>
+                        <strong>Factuur:</strong>
+                        <th>Sprinkhanen - 10 stuks = €15
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> Proteine Larven - 5 stuks = €10</th>
+                    </tr>
+                    <tr>
+                        <th> Proteine maden - 20 stuks = €18</th>
+                    </tr>
+                    <tr>
+                        <th> Verzend kosten = €0</th>
+                    </tr>
+                    <tr>
+                        <th> Totaal = €48</th>
+                    </tr>
+                    
+            </table>
+            <p>Uw bestelling is in behandeling!<br</p>
+            <p>Om uw bestelling te volgen klik:<br</p>
+            <p>🦗🦟🐛</p>
+            <button type="button" onclick="closePopup()">Bestelling volgen</button>
+            <div class="back">
+                <p> < betaling terugvragen</p>
+            </div>
+        </div>
+    </div>
+        <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup()
+            {
+               popup.classList.add("open-popup");
+            }
+            function closePopup()
+            {
+               popup.classList.remove("open-popup");
+            }
+        </script>
+
+</body>
+</html>
