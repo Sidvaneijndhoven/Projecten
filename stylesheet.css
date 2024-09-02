@@ -1,0 +1,133 @@
+/* user: SidvanEijndhoven
+Date: 2-sep-2024
+File: stylesheet.css */
+body
+{
+    margin: 0px;
+    background-color: rgb(46, 187, 223);
+    font-family: "Oswald", sans-serif;
+}
+
+.container
+{
+    width: 300px;
+    height: 500px;
+    margin: 200px auto 0px auto;
+}
+
+h1
+{
+    color: rgb(37, 250, 47);
+    font-size: 50px;
+    text-align: center;
+    animation: fadeInAnimation ease 2s;
+
+}
+
+h1 span
+{
+    color: rgb(204, 69, 7);
+}
+
+input 
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    background-color: rgb(49, 175, 17);
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px rgb(54, 216, 13);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    animation: slide-in 3s forwards;
+}
+
+#copy
+{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    margin: 0px auto 0px auto;
+    animation: slide-in2 3s forwards;
+}
+
+#gen
+{
+    width: auto; 
+    height: 70px;
+    background-color: rgb(49, 175 ,17);
+    margin: 8px auto 10px auto;
+    animation: Border 1s ease-out 6;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#but
+{
+   width: 200px; 
+   height: 90px;
+   position: relative;
+   left: 30px;
+   text-align: center;
+   background-color: rgb(72, 95, 95);
+   border: none;
+   margin: 50px auto 0px auto;
+   border-radius: 15px;
+
+}
+
+.under
+{
+    font-size: 15px;
+    font-weight: 545;
+}
+
+/* Animation */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Border
+{
+    from{
+        border: 2px solid rgb(12, 238, 31);
+    }
+
+    to{
+        border: 2px solid rgb(252, 61, 3);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
