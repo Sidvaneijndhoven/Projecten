@@ -1,6 +1,3 @@
-// To let cypress fill in input field use .type("")
-// Look good at the names
-
 
 describe("testing subsribe input", () => {
 
