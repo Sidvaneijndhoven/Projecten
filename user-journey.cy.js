@@ -1,7 +1,3 @@
-// To let cypress fill in input field use .type("")
-// Look good at the names
-// cntrl S!
-// to check the home page only use 
 
 describe("User-journey", () => {
 
