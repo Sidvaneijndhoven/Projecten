@@ -1,12 +1,3 @@
-// descirbe home page, it describe what? if the h1 contains the correct text, cy.visit try to 
-// If get error cy.visit() failed trying to load: https://localhost:3000/ forgot to start application server fix: npm run dev(other terminal)
-// cy.get means its looking for h1 does it contains what it should be ("")?
-// only use tags(buttons, h1, p ..) dont ids(classes/ids)
-// .only for if you want to test one it
-// .contanis are case sensitive
-// cypress command for easier code
-//  cy.getData("course-0").find("a") finds a element inside a element 
-//DONT FORGET CNTRL S!!!!
 
 describe('home page', () => {
 
