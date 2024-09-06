@@ -1,3 +1,4 @@
+# dont play it acc
 while True:
     print("Lets play a little game!")
 
