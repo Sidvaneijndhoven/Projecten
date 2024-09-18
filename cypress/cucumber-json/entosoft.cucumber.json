@@ -1,0 +1,316 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Entosoft testing",
+    "line": 1,
+    "id": "entosoft-testing",
+    "tags": [],
+    "uri": "entosoft.feature",
+    "elements": [
+      {
+        "id": "entosoft-testing;test-if-page-loads",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Test if page loads",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 1325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Local login test",
+            "result": {
+              "status": "passed",
+              "duration": 2123000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;lets-user-decide-where-to-go-on-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Lets user decide where to go on page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 298000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Where",
+                      "Exact"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "#rearingDropdown",
+                      "Rearing Batches Report"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "You put here where you want to go and you go there",
+            "result": {
+              "status": "passed",
+              "duration": 5059000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;stock---test-deliveries-section",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Stock - test deliveries section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "Tests the deliveries page",
+            "result": {
+              "status": "passed",
+              "duration": 6760000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;stock---test-final-products",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Stock - test Final Products",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Tests the final products page",
+            "result": {
+              "status": "passed",
+              "duration": 3277000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;stock---test-r&d-products-page",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Stock - test R&D Products page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Tests the R&D products page",
+            "result": {
+              "status": "passed",
+              "duration": 2919000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;stock---test-quality-assurance-products",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Stock - test Quality Assurance Products",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Tests the quality assurance products page",
+            "result": {
+              "status": "passed",
+              "duration": 1658000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;stock---test-ingredient-journal-page",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Stock - test Ingredient Journal page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Tests the ingredient journal page",
+            "result": {
+              "status": "passed",
+              "duration": 1640000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;samples---test-samples-section",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Samples - test samples section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 204000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "Tests the samples page",
+            "result": {
+              "status": "passed",
+              "duration": 201544000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;user-logs-into-the-entosoft-website---tests-if-page-loaded-correct-and-all-nav-work(takes-a-min)",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "User logs into the Entosoft website - tests if page loaded correct and all nav work(takes a min)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 812000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "root",
+                      "123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Fills in the following and tests if page loaded",
+            "result": {
+              "status": "passed",
+              "duration": 251572000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
