@@ -1,4 +1,4 @@
-import {Given, When, Then, Before} from "cypress-cucumber-preprocessor/steps"
+import {Given, When, And, Then, Before} from "cypress-cucumber-preprocessor/steps"
 
 Given("Visit the Entosoft testing site", () => {
     cy.visit("https://cypress-cucumber-m77rbe.entosoft.protix-dev.eu/accounts/login/")
