@@ -35,8 +35,37 @@ Scenario: Stock - test Ingredient Journal page
 Scenario: Samples - test samples section
     When Tests the samples page 
 
-Scenario: Shipments - test Shipments page
+Scenario: Samples - test Shipments page
     Then Tests the shipments page
+
+Scenario: Samples - test Protocols page
+    Then Tests the protocols page
+
+Scenario: Samples - test Measurement Overview page
+    Then Tests the Measurement Overview page
+
+Scenario: Breed - test the Breed section
+    When Tests the sbus page
+
+Scenario: Breed - test the Breed Batches page
+    Then Tests the breed batches page
+
+Scenario: Breed - test the Oviste Racks page
+    Then Tests the ovisite racks page
+
+Scenario: Breed - test the Ovisite Rack logs
+    Then Tests ovisite rack logs
+
+Scenario: Breed - test work instructions for breed page
+    Then Tests the work instructions page
+
+Scenario: Breed - test Activity configurations page 
+    Then Tests activity configurations page
+
+Scenario: Breed - test Breed dashboard: daily yield per harvest daily
+    Then Tests breed dashboard
+
+
 
 Scenario: User logs into the Entosoft website - tests if page loaded correct and all nav work(takes a min)
     Then Fills in the following and tests if page loaded

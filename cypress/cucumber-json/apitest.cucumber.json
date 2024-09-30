@@ -1,0 +1,138 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing budget app",
+    "line": 1,
+    "id": "testing-budget-app",
+    "tags": [],
+    "uri": "apitest.feature",
+    "elements": [
+      {
+        "id": "testing-budget-app;testing-if-the-page-loads",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Testing if the page loads",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the budget app",
+            "result": {
+              "status": "passed",
+              "duration": 141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Visiting the budget app it should load correctly",
+            "result": {
+              "status": "passed",
+              "duration": 2675000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-budget-app;user-can-fill-in-the-fields",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User can fill in the fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the budget app",
+            "result": {
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Budget",
+                      "Title",
+                      "Cost"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "1",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Can fill in under here what to test",
+            "result": {
+              "status": "passed",
+              "duration": 5645000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-budget-app;user-can-edit-or-remove-the-expense",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "User can edit or remove the expense",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the budget app",
+            "result": {
+              "status": "passed",
+              "duration": 483000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Remove",
+                      "Edit"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "no",
+                      "no"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "Fill in if you want to edit or remove",
+            "result": {
+              "status": "passed",
+              "duration": 9854000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

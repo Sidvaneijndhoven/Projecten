@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing calculator app",
+    "line": 1,
+    "id": "testing-calculator-app",
+    "tags": [],
+    "uri": "calculator.feature",
+    "elements": [
+      {
+        "id": "testing-calculator-app;testing-if-the-calculator-loads",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Testing if the calculator loads",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Should load the calculator",
+            "result": {
+              "status": "passed",
+              "duration": 2237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Open the calculator it should load",
+            "result": {
+              "status": "passed",
+              "duration": 138000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

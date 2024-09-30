@@ -278,9 +278,7 @@ When("Tests the samples page", () => {
       cy.get('[method="POST"] > .btn').should("exist").contains("Add shipments")
       cy.get('a.btn').should("exist").contains("Add new sample")
       cy.get('#id_sample_number').type("test").clear()
-      cy.wait(200000)
     });
-
 
 
 Then("Tests the shipments page", () => {
@@ -298,7 +296,7 @@ Then("Tests the shipments page", () => {
         { id8: "tr > :nth-child(5)",  text8: "Shipped by"},
         { id8: "tr > :nth-child(6)",  text8: "Shipped to"},
         { id8: "tr > :nth-child(7)",  text8: "Received on"},
-        { id8: "tr > :nth-child(8))",  text8: "Received by"},
+        { id8: "tr > :nth-child(8)",  text8: "Received by"},
         { id8: "tr > :nth-child(9)",  text8: "Transported by"},
         { id8: "tr > :nth-child(10)",  text8: "Action"},
         
@@ -313,49 +311,275 @@ Then("Tests the shipments page", () => {
             }
           });
       });
-      cy.wait(200000)
+});
+
+Then("Tests the protocols page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#samplesDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Protocols").click();
+  cy.get("h1").should("exist").contains("Protocols")
+
+    const proto = [ 
+      { id9: "thead > tr > :nth-child(1)", text9: "#"},
+      { id9: "thead > tr > :nth-child(2)", text9: "Name"},
+      { id9: "thead > tr > :nth-child(3)",  text9: "Measurement type"},
+      { id9: "thead > tr > :nth-child(4)",  text9: "Product type"},
+      { id9: "thead > tr > :nth-child(5)",  text9: "Site"},
+    ] 
+  
+  proto.forEach(({ id9, text9 }) => {
+      cy.get(id9)
+        .should('exist')
+        .then(element => {
+          if (text9) {
+            cy.wrap(element).contains(text9);
+          }
+        });
+      });
+      cy.get(".btn").should("exist").contains("New protocol")
+});
+
+ Then("Tests the Measurement Overview page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#samplesDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Measurements Overview").click();
+  cy.get("h1").should("exist").contains("Measurement Overview")
+
+    const measur = [ 
+      { id10: "tr > :nth-child(1)", text10: "Sample"},
+      { id10: "tr > :nth-child(2)", text10: "Ingredient"},
+      { id10: "tr > :nth-child(3)",  text10: "Created on"},
+      { id10: "tr > :nth-child(4)",  text10: " As"},
+      { id10: "tr > :nth-child(5)",  text10: " Eiwit"},
+      { id10: "tr > :nth-child(6)",  text10: " Vet"},
+      { id10: "tr > :nth-child(7)",  text10: " Vocht"},
+      { id10: "tr > :nth-child(8)",  text10: "Deadline"},
+      { id10: "tr > :nth-child(9)",  text10: "Site"},
+    ]
+  
+  measur.forEach(({ id10, text10 }) => {
+      cy.get(id10)
+        .should('exist')
+        .then(element => {
+          if (text10) {
+            cy.wrap(element).contains(text10);
+          }
+        });
+      });
+      cy.get('[scope="col"]').should("exist").contains("Action")
+});
+
+When("Tests the sbus page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("SBUs").click();
+  cy.get("h1").should("exist").contains("SBUs")
+  cy.get('h2').should("exist").contains("Shift Activities")
+  cy.get(':nth-child(2) > .text-center').should("exist").contains("Morning shift")
+  cy.get(':nth-child(3) > .text-center').should("exist").contains("Afternoon shift")
+  cy.get('.center-text > .text-center').should("exist").contains("Night shift")
+  cy.get('.justify-content-center > :nth-child(1) > :nth-child(2) > :nth-child(2)').should("exist")
+  cy.get('.justify-content-center > :nth-child(1) > :nth-child(2) > :nth-child(3)').should("exist")
+  cy.get('.center-text').should("exist")
+
+  
+  const sbu = 
+  [ 
+    { id11: ":nth-child(1) > .card > .card-body"},
+    { id11: ":nth-child(2) > .card > .card-body"},
+    { id11: ":nth-child(3) > .card > .card-body"},
+    { id11: ":nth-child(4) > .card > .card-body"},
+    { id11: ":nth-child(5) > .card > .card-body"},
+    { id11: ":nth-child(6) > .card > .card-body"},
+    { id11: ":nth-child(7) > .card > .card-body"},
+    { id11: ":nth-child(8) > .card > .card-body"},
+    { id11: ":nth-child(9) > .card > .card-body"},
+    { id11: ":nth-child(10) > .card > .card-body"},
+    { id11: ":nth-child(11) > .card > .card-body"},
+    { id11: ":nth-child(12) > .card > .card-body"},
+    { id11: ":nth-child(13) > .card > .card-body"},
+    { id11: ":nth-child(14) > .card > .card-body"},
+    { id11: ":nth-child(15) > .card > .card-body"},
+    { id11: ":nth-child(16) > .card > .card-body"},
+  ]
+
+ sbu.forEach(({ id11}) => {
+    cy.get(id11)
+      .should('exist')
+    });
+
+
+
+  cy.get('.justify-content-center > :nth-child(1) > :nth-child(4)').should("exist").contains("Register ovisite racks of single harvest day at pre-hatch cabinet")
+  cy.get('#div_id_register_date_time > .requiredField').should("exist").contains("When did you move the ovisite racks*")
+  cy.get('#div_id_target_location > .requiredField').should("exist").contains("Where did you put them?*")
+  cy.get('#submit-id-register').should("exist").contains("Register ovisite racks at pre-hatch cabinet")
+  cy.get('#id_register_date_time').should("exist")
+  cy.get('#id_target_location').should("exist")
+  cy.get(':nth-child(6) > h4').should("exist").contains("Register new hatch rate measurement for a breed batch")
+  cy.get(':nth-child(6) > .btn').should("exist").contains("Add new measurement")
 })
 
 
+Then("Tests the breed batches page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Breed Batches").click();
+  cy.get("h1").should("exist").contains("Breed Batches")
+  cy.get('#div_id_after').should("exist").contains("After*")
+  cy.get('#div_id_before').should("exist").contains("Before*")
+  cy.get('#submit-id-apply_filter').should("exist").contains("Apply filter")
+  cy.get('.user-select-none').should("exist")
+})
+
+Then("Tests the ovisite racks page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Ovisite Racks").click();
+  cy.get("h1").should("exist").contains("Ovisite Racks") 
+
+  const ovisite = [ 
+    { id12: "tbody > :nth-child(1) > :nth-child(1)", text12: "Select"},
+    { id12: "tbody > :nth-child(1) > :nth-child(2)", text12: "Label"},
+    { id12: "tbody > :nth-child(1) > :nth-child(3)", text12: "Harvest date"},
+    { id12: "tbody > :nth-child(1) > :nth-child(4)", text12: "Breed batch"},
+    { id12: "tbody > :nth-child(1) > :nth-child(5)", text12: "Sub-SBU"},
+    { id12: "tbody > :nth-child(1) > :nth-child(6)", text12: "Eggs (g)"},
+    { id12: "tbody > :nth-child(1) > :nth-child(7)", text12: "Location"},
+    { id12: "tbody > :nth-child(1) > :nth-child(8)", text12: "At location since"},
+
+  
+  ]
+
+  ovisite.forEach(({ id12, text12 }) => {
+    cy.get(id12)
+      .should('exist')
+      .then(element => {
+        if (text12) {
+          cy.wrap(element).contains(text12);
+        }
+      });
+    });
+
+    cy.get('.btn-secondary').should("exist").contains("Select all")
+    cy.get('h4').should("exist").contains("Move selected ovisite racks")
+    cy.get('#div_id_move_date_time > .requiredField').should("exist").contains("When did you move the ovisite racks*")
+    cy.get('#div_id_target_location > .requiredField').should("exist").contains("Where did you move the ovisite racks to?*")
+    cy.get('#div_id_move_date_time').should("exist")
+    cy.get('#div_id_target_location').should("exist")
+    cy.get('#submit-id-move_selected_ovisites').should("exist").contains("Move selected ovisite racks")
+    cy.get('#div_id_label').should("exist").contains("Label")
+    cy.get('#id_label').type("test").clear()
+    cy.get('#div_id_harvest_date').should("exist").contains("Harvest date")
+    cy.get('#div_id_sbu').should("exist").contains("From SBU")
+    cy.get('#id_sbu').type("test").clear()
+    cy.get('#div_id_location').should("exist").contains("Location")
+    cy.get('#submit-id-apply_filter').should("exist").contains("Apply filter")
+})
+
+Then("Tests ovisite rack logs", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Ovisite Rack Logs").click();
+  cy.get("h1").should("exist").contains("Ovisite rack log") 
+  cy.get('#div_id_date').should("exist").contains("Date*")
+  cy.get('#submit-id-apply_filter').should("exist").contains("Apply filter")
+
+  const racklog = [ 
+    { id13: "tbody > :nth-child(1) > :nth-child(1)", text13: "Breed batch"},
+    { id13: "tbody > :nth-child(1) > :nth-child(2)", text13: "SBU"},
+    { id13: "tbody > :nth-child(1) > :nth-child(3)", text13: "Eggs (g)"},
+    { id13: "tbody > :nth-child(1) > :nth-child(4)", text13: "date"},
+    { id13: "tbody > :nth-child(1) > :nth-child(5)", text13: "Location"},  
+  ]
+
+  racklog.forEach(({ id13, text13 }) => {
+    cy.get(id13)
+      .should('exist')
+      .then(element => {
+        if (text13) {
+          cy.wrap(element).contains(text13);
+        }
+      });
+    });
+})
+
+Then("Tests the work instructions page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Work Instructions").click();
+  cy.get("h1").should("exist").contains("Work Instructions for Breed") 
+
+  const workbreed = [ 
+    { id14: "thead > tr > :nth-child(1)", text14: "Title"},
+    { id14: "thead > tr > :nth-child(2)", text14: "Updated On"},
+    { id14: "thead > tr > :nth-child(3)", text14: "Updated By"},
+    { id14: "thead > tr > :nth-child(4)", text14: "Action"},
+  ]
+
+    workbreed.forEach(({ id14, text14 }) => {
+        cy.get(id14)
+          .should('exist')
+          .then(element => {
+            if (text14) {
+              cy.wrap(element).contains(text14);
+            }
+          });
+        });
+        cy.get(':nth-child(3) > .row > .col-12').should("exist")
+})
+
+Then("Tests activity configurations page", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Activity Configurations").click();
+  cy.get("h1").should("exist").contains("Activity configurations for Breed") 
+  cy.get('.col-12 > :nth-child(2)').should("exist").contains("Activities are explained on their manual page.")
+  cy.get(':nth-child(1) > h2').should("exist").contains("Batch activity configurations")
+  cy.get(':nth-child(1) > p').should("exist").contains("Activities for these configurations are created when a batch is created and are shown based on the age of the batch.")
+  cy.get(':nth-child(2) > h2').should("exist").contains("Shift activity configurations")
+  cy.get(':nth-child(2) > p').should("exist").contains("The activities for these configurations are created on specific times on specific days of the week or month.")
+  cy.get(':nth-child(1) > .mb-2 > .btn').should("exist").contains("New configuration")
+  cy.get(':nth-child(2) > .mb-2 > .btn').should("exist").contains("New configuration")
+
+  const conf = [ 
+    { id15: ":nth-child(1) > .table > tbody > :nth-child(1) > :nth-child(1)", text15: "Id"},
+    { id15: ":nth-child(1) > .table > tbody > :nth-child(1) > :nth-child(2)", text15: "Description"},
+    { id15: ":nth-child(1) > .table > tbody > :nth-child(1) > :nth-child(3)", text15: "Start after"},
+    { id15: ":nth-child(1) > .table > tbody > :nth-child(1) > :nth-child(4)", text15: "Lifetime"},  
+  ]
+
+    conf.forEach(({ id15, text15 }) => {
+        cy.get(id15)
+          .should('exist')
+          .then(element => {
+            if (text15) {
+              cy.wrap(element).contains(text15);
+            }
+          });
+        });
+        // NOT DONE YET
+})
+
+Then("Tests breed dashboard", () => {
+  cy.get("#id_username").type("root")
+  cy.get("#id_password").type("123456789")
+  cy.get(":nth-child(2) > .card-body > form > .btn").click()
+  cy.get("#bhiDropdown").click().get('.nav-item.show > .dropdown-menu').contains("Dashboard: Daily Yield per harvest day").click();
+  cy.get("h1").should("exist").contains("Breed Dashboard: Daily Yield per Harvest Day") 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // cy.log("**** TEST SUCCES REMOVE ****")
+  // cy.wait(200000)
+})
 
 Then("Fills in the following and tests if page loaded", (data) => {
     data.hashes().forEach(element => {

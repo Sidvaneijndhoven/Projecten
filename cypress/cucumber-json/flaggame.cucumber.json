@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Flag game test",
+    "line": 1,
+    "id": "flag-game-test",
+    "tags": [],
+    "uri": "flaggame.feature",
+    "elements": [
+      {
+        "id": "flag-game-test;tests-if-the-flag-game-loads-on-the-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Tests if the flag game loads on the page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Load the flag game",
+            "result": {
+              "status": "passed",
+              "duration": 594000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Run the test the flag game should load",
+            "result": {
+              "status": "passed",
+              "duration": 150000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "flag-game-test;tests-the-game",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Tests the game",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Load the flag game",
+            "result": {
+              "status": "passed",
+              "duration": 279000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Drags the items to the correct box",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: cy.get(...).drag is not a function\n    at Context.eval (cypress/e2e/flaggame/flaggame.js:42:35)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:163227:53)\n    at $Cypress.action (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:41459:28)\n    at Runnable.run (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:145815:13)\n    at next (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:155600:10)\n    at <unknown> (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:155644:5)\n    at timeslice (http://127.0.0.1:3000/__cypress/runner/cypress_runner.js:146155:27)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

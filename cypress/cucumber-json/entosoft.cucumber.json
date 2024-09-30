@@ -22,7 +22,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 1325000000
+              "duration": 1671000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Local login test",
             "result": {
               "status": "passed",
-              "duration": 2123000000
+              "duration": 2194000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 539000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "name": "You put here where you want to go and you go there",
             "result": {
               "status": "passed",
-              "duration": 5059000000
+              "duration": 5476000000
             }
           }
         ]
@@ -99,7 +99,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 241000000
+              "duration": 399000000
             }
           },
           {
@@ -109,7 +109,7 @@
             "name": "Tests the deliveries page",
             "result": {
               "status": "passed",
-              "duration": 6760000000
+              "duration": 6936000000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 329000000
+              "duration": 418000000
             }
           },
           {
@@ -139,7 +139,7 @@
             "name": "Tests the final products page",
             "result": {
               "status": "passed",
-              "duration": 3277000000
+              "duration": 3814000000
             }
           }
         ]
@@ -159,7 +159,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 312000000
+              "duration": 300000000
             }
           },
           {
@@ -169,7 +169,7 @@
             "name": "Tests the R&D products page",
             "result": {
               "status": "passed",
-              "duration": 2919000000
+              "duration": 3402000000
             }
           }
         ]
@@ -189,7 +189,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 237000000
+              "duration": 284000000
             }
           },
           {
@@ -199,7 +199,7 @@
             "name": "Tests the quality assurance products page",
             "result": {
               "status": "passed",
-              "duration": 1658000000
+              "duration": 1839000000
             }
           }
         ]
@@ -219,7 +219,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 270000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "name": "Tests the ingredient journal page",
             "result": {
               "status": "passed",
-              "duration": 1640000000
+              "duration": 1919000000
             }
           }
         ]
@@ -249,7 +249,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 204000000
+              "duration": 241000000
             }
           },
           {
@@ -259,7 +259,307 @@
             "name": "Tests the samples page",
             "result": {
               "status": "passed",
-              "duration": 201544000000
+              "duration": 1993000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;samples---test-shipments-page",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Samples - test Shipments page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Tests the shipments page",
+            "result": {
+              "status": "passed",
+              "duration": 1650000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;samples---test-protocols-page",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Samples - test Protocols page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 310000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Tests the protocols page",
+            "result": {
+              "status": "passed",
+              "duration": 1492000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;samples---test-measurement-overview-page",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Samples - test Measurement Overview page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "Tests the Measurement Overview page",
+            "result": {
+              "status": "passed",
+              "duration": 1807000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-the-breed-section",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "Breed - test the Breed section",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "Tests the sbus page",
+            "result": {
+              "status": "passed",
+              "duration": 3149000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-the-breed-batches-page",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Breed - test the Breed Batches page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Tests the breed batches page",
+            "result": {
+              "status": "passed",
+              "duration": 6537000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-the-oviste-racks-page",
+        "keyword": "Scenario",
+        "line": 53,
+        "name": "Breed - test the Oviste Racks page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "Tests the ovisite racks page",
+            "result": {
+              "status": "passed",
+              "duration": 7323000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-the-ovisite-rack-logs",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Breed - test the Ovisite Rack logs",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 308000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "Tests ovisite rack logs",
+            "result": {
+              "status": "passed",
+              "duration": 1500000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-work-instructions-for-breed-page",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "Breed - test work instructions for breed page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "Tests the work instructions page",
+            "result": {
+              "status": "passed",
+              "duration": 1485000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-activity-configurations-page",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "Breed - test Activity configurations page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 334000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "Tests activity configurations page",
+            "result": {
+              "status": "passed",
+              "duration": 2002000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;breed---test-breed-dashboard:-daily-yield-per-harvest-daily",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Breed - test Breed dashboard: daily yield per harvest daily",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Visit the Entosoft testing site",
+            "result": {
+              "status": "passed",
+              "duration": 314000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "Tests breed dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1328000000
             }
           }
         ]
@@ -267,7 +567,7 @@
       {
         "id": "entosoft-testing;user-logs-into-the-entosoft-website---tests-if-page-loaded-correct-and-all-nav-work(takes-a-min)",
         "keyword": "Scenario",
-        "line": 38,
+        "line": 70,
         "name": "User logs into the Entosoft website - tests if page loaded correct and all nav work(takes a min)",
         "tags": [],
         "type": "scenario",
@@ -279,7 +579,7 @@
             "name": "Visit the Entosoft testing site",
             "result": {
               "status": "passed",
-              "duration": 812000000
+              "duration": 250000000
             }
           },
           {
@@ -302,11 +602,11 @@
               }
             ],
             "keyword": "Then ",
-            "line": 39,
+            "line": 71,
             "name": "Fills in the following and tests if page loaded",
             "result": {
               "status": "passed",
-              "duration": 251572000000
+              "duration": 310507000000
             }
           }
         ]
