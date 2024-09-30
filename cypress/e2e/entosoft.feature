@@ -9,7 +9,7 @@ Scenario: Test if page loads
 Scenario: Lets user decide where to go on page
 When You put here where you want to go and you go there
 |  Where          | Exact          |
-|  #rearingDropdown | Rearing Batches Report  |
+|  #rearingDropdown | Rearing Batches Report |
 
 # Choose from: #stockDropdown, #samplesDropdown, #bhiDropdown, #breedDropdown, #nurseryDropdown, #r4bDropdown,
 # - #rearingDropdown, #processingDropdown, #dashboardsDropdown, #geneticsDropdown, #sheqDropdown, #utilitiesDropdown,
