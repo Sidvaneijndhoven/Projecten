@@ -12,7 +12,7 @@ Scenario: User1 starts the batch and user2 stops the running batch
 
   Then User2 logs in and edits the running batch from user1
   |Login     | Pass   |
-  |test_user2|qwerty__|
+  |root|123456789|
 
 
 

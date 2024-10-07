@@ -39,7 +39,7 @@
             "name": "Log in",
             "result": {
               "status": "passed",
-              "duration": 2714000000
+              "duration": 1422000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Log in as user1 start the batch and then login as user2 and edit batch",
             "result": {
               "status": "passed",
-              "duration": 17649000000
+              "duration": 16728000000
             }
           },
           {
@@ -87,8 +87,8 @@
                   },
                   {
                     "cells": [
-                      "test_user2",
-                      "qwerty__"
+                      "root",
+                      "123456789"
                     ]
                   }
                 ]
@@ -99,7 +99,7 @@
             "name": "User2 logs in and edits the running batch from user1",
             "result": {
               "status": "passed",
-              "duration": 8136000000
+              "duration": 8552000000
             }
           }
         ]
