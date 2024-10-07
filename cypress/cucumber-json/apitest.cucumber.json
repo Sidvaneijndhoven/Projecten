@@ -21,8 +21,9 @@
             "line": 4,
             "name": "Visit the budget app",
             "result": {
-              "status": "passed",
-              "duration": 141000000
+              "status": "failed",
+              "duration": 425000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:3000/budget_app/index.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131939:76)\n    at visitFailedByErr (http://localhost:57796/__cypress/runner/cypress_runner.js:131354:12)\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131922:13)\n    at tryCatcher (http://localhost:57796/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57796/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:57796/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:57796/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:57796/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:57796/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:57796/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/apitest/apitest.js:4:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -31,8 +32,7 @@
             "line": 7,
             "name": "Visiting the budget app it should load correctly",
             "result": {
-              "status": "passed",
-              "duration": 2675000000
+              "status": "skipped"
             }
           }
         ]
@@ -51,8 +51,8 @@
             "line": 4,
             "name": "Visit the budget app",
             "result": {
-              "status": "passed",
-              "duration": 744000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:3000/budget_app/index.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131939:76)\n    at visitFailedByErr (http://localhost:57796/__cypress/runner/cypress_runner.js:131354:12)\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131922:13)\n    at tryCatcher (http://localhost:57796/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57796/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:57796/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:57796/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:57796/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:57796/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:57796/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/apitest/apitest.js:4:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -80,8 +80,7 @@
             "line": 10,
             "name": "Can fill in under here what to test",
             "result": {
-              "status": "passed",
-              "duration": 5645000000
+              "status": "skipped"
             }
           }
         ]
@@ -100,8 +99,8 @@
             "line": 4,
             "name": "Visit the budget app",
             "result": {
-              "status": "passed",
-              "duration": 483000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:3000/budget_app/index.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131939:76)\n    at visitFailedByErr (http://localhost:57796/__cypress/runner/cypress_runner.js:131354:12)\n    at <unknown> (http://localhost:57796/__cypress/runner/cypress_runner.js:131922:13)\n    at tryCatcher (http://localhost:57796/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57796/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:57796/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:57796/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:57796/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:57796/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:57796/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:57796/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/apitest/apitest.js:4:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -127,8 +126,7 @@
             "line": 15,
             "name": "Fill in if you want to edit or remove",
             "result": {
-              "status": "passed",
-              "duration": 9854000000
+              "status": "skipped"
             }
           }
         ]

@@ -44,6 +44,29 @@
 //     });
 // })
 
+Cypress.Commands.add('login', (username, password) => {
+    cy.session([username, password], () => {                    
+        cy.visit("https://cypress-cucumber-m77rbe.entosoft.protix-dev.eu/");
+        cy.get("#id_username").type(username);
+        cy.get("#id_password").type(password);
+        cy.get(":nth-child(2) > .card-body > form > .btn").click();
+        cy.url().should("eq", "https://cypress-cucumber-m77rbe.entosoft.protix-dev.eu/");
+        cy.get(".jumbotron").should("exist");
+        cy.get(".display-4").should("exist").contains("Entosoft® Control Center");
+        cy.get(".navbar-brand").should("exist");
+        cy.get(".navbar").should("exist");
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

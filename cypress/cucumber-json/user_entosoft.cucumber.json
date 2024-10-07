@@ -1,0 +1,109 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Entosoft testing",
+    "line": 1,
+    "id": "entosoft-testing",
+    "tags": [],
+    "uri": "user_entosoft.feature",
+    "elements": [
+      {
+        "id": "entosoft-testing;user1-starts-the-batch-and-user2-stops-the-running-batch",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "User1 starts the batch and user2 stops the running batch",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test_user",
+                      "qwerty@1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Log in",
+            "result": {
+              "status": "passed",
+              "duration": 2714000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Genetics",
+                      "Pupae timing",
+                      "Num of prepupae in sample",
+                      "Num of Pupae in sample",
+                      "Num of empty Pupae in sample"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "BPF-0000",
+                      "2",
+                      "1",
+                      "2",
+                      "3"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Log in as user1 start the batch and then login as user2 and edit batch",
+            "result": {
+              "status": "passed",
+              "duration": 17649000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Login",
+                      "Pass"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test_user2",
+                      "qwerty__"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User2 logs in and edits the running batch from user1",
+            "result": {
+              "status": "passed",
+              "duration": 8136000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
