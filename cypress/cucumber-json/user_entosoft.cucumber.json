@@ -39,7 +39,7 @@
             "name": "Log in",
             "result": {
               "status": "passed",
-              "duration": 1422000000
+              "duration": 1444000000
             }
           },
           {
@@ -58,10 +58,10 @@
                   {
                     "cells": [
                       "BPF-0000",
-                      "2",
                       "1",
                       "2",
-                      "3"
+                      "3",
+                      "4"
                     ]
                   }
                 ]
@@ -72,7 +72,7 @@
             "name": "Log in as user1 start the batch and then login as user2 and edit batch",
             "result": {
               "status": "passed",
-              "duration": 16728000000
+              "duration": 7659000000
             }
           },
           {
@@ -99,7 +99,103 @@
             "name": "User2 logs in and edits the running batch from user1",
             "result": {
               "status": "passed",
-              "duration": 8552000000
+              "duration": 3489000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "entosoft-testing;test-activity-check-off-list",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Test activity check off list",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test_user",
+                      "qwerty@1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Log in",
+            "result": {
+              "status": "passed",
+              "duration": 502000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Login2",
+                      "Pass2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test_user",
+                      "qwerty@1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User1 logs in and checks some activitys",
+            "result": {
+              "status": "passed",
+              "duration": 7032000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Login3",
+                      "Pass3"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test_user2",
+                      "qwerty__"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "User2 logs in and should see the activitys but cant edit them",
+            "result": {
+              "status": "passed",
+              "duration": 3619000000
             }
           }
         ]

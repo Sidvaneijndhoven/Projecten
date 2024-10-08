@@ -1,4 +1,5 @@
 // run test: npx cypress run --spec "cypress/e2e/user_entosoft.feature"
+// run checklist: npx cypress run --spec "cypress/e2e/user_entosoft.feature" --env TAGS='@smoke'
 import { Given, When, Then, Before } from "cypress-cucumber-preprocessor/steps";
 
 Given("Log in", (dataTable) => 
@@ -11,7 +12,7 @@ Given("Log in", (dataTable) =>
 
 When("Log in as user1 start the batch and then login as user2 and edit batch",(data) => {
     cy.get('#bhiDropdown').click()
-    cy.wait(1500)
+    cy.wait(500)
     cy.get('.nav-item.show > .dropdown-menu > :nth-child(1) > a').click()
 
     // user1 start batch
@@ -36,14 +37,15 @@ When("Log in as user1 start the batch and then login as user2 and edit batch",(d
     for (let i = 1; i < 5; i++) 
     {
         cy.get(`tbody > :nth-child(${i}) > :nth-child(1)`).should("exist").scrollIntoView()
-        cy.wait(1500)
+        cy.wait(500)
     }
     for (let i = 1; i < 5; i++) 
     {
         cy.get(`tbody > :nth-child(${i}) > :nth-child(2)`).should("exist").scrollIntoView()
-        cy.wait(1500)
+        cy.wait(500)
     }
 });
+
 Then("User2 logs in and edits the running batch from user1", (login) => {
     // user2 edit batch
     // user 1 logout
@@ -56,14 +58,50 @@ Then("User2 logs in and edits the running batch from user1", (login) => {
         cy.get("#id_password").type(element.Pass);
         cy.get(':nth-child(2) > .card-body > form > .btn').click()
     })
-    cy.wait(1500)
+    cy.wait(500)
     cy.get('#bhiDropdown').click()
     cy.get('.nav-item.show > .dropdown-menu > :nth-child(1) > a').click()
-    cy.wait(2000)
+    cy.wait(200)
     cy.get('.btn').contains("Stop batch").scrollIntoView().click()
-    cy.wait(2000)
+    cy.wait(200)
     cy.get('.modal-footer > .btn-primary').click()
 });
     
+When("User1 logs in and checks some activitys", (checklogin) => {
+    checklogin.hashes().forEach((element) =>
+    {
+        cy.get("#id_username").type(element.Login2);
+        cy.get("#id_password").type(element.Pass2);
+        cy.get(':nth-child(2) > .card-body > form > .btn').click()
+    })
+    cy.get('#bhiDropdown').click()
+    cy.get('.nav-item.show > .dropdown-menu > :nth-child(1) > a').click()
+    cy.wait(2000)
+    // Checks the activitys
+    cy.get('input[type="checkbox"]').check({ multiple: true, force: true });
+    cy.wait(1500)
+    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+    cy.wait(1000)
+    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+    cy.get(':nth-child(6) > :nth-child(1) > .nav-link').click()
+    cy.get('.nav-link > .dropdown-menu > :nth-child(2) > a').click()
+    cy.get('.card-body > :nth-child(2) > a').click()
+});
+
+Then("User2 logs in and should see the activitys but cant edit them", (checklogin2) => 
+{
+    checklogin2.hashes().forEach((element) =>
+    {
+        cy.get("#id_username").type(element.Login3);
+        cy.get("#id_password").type(element.Pass3);
+        cy.get(':nth-child(2) > .card-body > form > .btn').click()
+    });
+    cy.get('#bhiDropdown').click()
+    cy.get('.nav-item.show > .dropdown-menu > :nth-child(1) > a').click()
+    cy.wait(2000)
+    cy.get(':nth-child(2) > .btn').click()
+    cy.get('input[type="checkbox"]').should("exist")   
+    cy.get('.justify-content-center > :nth-child(1) > :nth-child(2) > :nth-child(2)').should("be.visible") 
+})
     
 
