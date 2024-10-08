@@ -7,7 +7,7 @@ Given("Log in", (dataTable) =>
     dataTable.hashes().forEach(element => {
         cy.login(element.Username, element.Password);
     });
-    cy.visit("https://cypress-cucumber-m77rbe.entosoft.protix-dev.eu/");
+    cy.visit("");
 })
 
 When("If batch1 is already on stop and rerun code else run code", () => {
